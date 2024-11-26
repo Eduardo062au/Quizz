@@ -221,5 +221,8 @@ public class Quiz {
         System.out.println("Porcentagem de acertos: " + String.format("%.2f", porcentagem) + "%");
 
         scanner.close();
+
+        // Mostrar perguntas acertadas
+
     }
 }
