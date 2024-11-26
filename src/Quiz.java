@@ -124,7 +124,7 @@ public class Quiz {
         q9.opcaoB = " b) 1912-1931";
         q9.opcaoC = " c) 1982-1998";
         q9.opcaoD = " d) 1960-1980";
-        q9.opcaoE = " e) 1937-1959";
+        q9.opcaoE = " e) 1937-1953";
         q9.correta = "a";
         q9.escrevaQuestao();
         resp = q9.leiaResposta();
