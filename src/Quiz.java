@@ -216,13 +216,12 @@ public class Quiz {
         double porcentagem = (cont / 15.0) * 100;
 
         // Contador de acertos
-        System.out.println("Você acertou " + cont + " respostas.");
-        System.out.println("Você errou " + (15 - cont) + " respostas.");
+        System.out.println("Você acertou " + cont + " de respostas.");
+        System.out.println("Você errou " + (15 - cont) + " de respostas.");
         System.out.println("Porcentagem de acertos: " + String.format("%.2f", porcentagem) + "%");
 
         scanner.close();
 
-        // Mostrar perguntas acertadas
 
     }
 }
