@@ -131,7 +131,7 @@ public class Quiz {
         if (q9.isCorreta(resp)) cont++;
 
         Questao q10 = new Questao();
-        q10.pergunta = "Em que oceano o Titanic afundou?";
+        q10.pergunta = "Em que oceano o Titanic sofreu o afundamento?";
         q10.opcaoA = " a) Oceano Antártico";
         q10.opcaoB = " b) Oceano Ártico";
         q10.opcaoC = " c) Oceano Índico";
