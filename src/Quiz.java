@@ -1,36 +1,12 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
-
-// Classe para representar uma pergunta
-class Questao1 {
-    private String questao;
-    private List<String> alternativas;
-    private String respostaCorreta;
-
-    public Questao1(String questao, List<String> alternativas, String respostaCorreta) {
-        this.questao = questao;
-        this.alternativas = alternativas;
-        this.respostaCorreta = respostaCorreta;
-    }
-
-    public String getQuestao() {
-        return questao;
-    }
-
-    public List<String> getAlternativas() {
-        return alternativas;
-    }
-
-    public String getRespostaCorreta() {
-        return respostaCorreta;
-    }
-}
 
 public class Quiz {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        String resp;
+        int cont = 0;
 
         // Apresentação do Quiz
         System.out.println("CENTRO UNIVERSITARIO ALFREDO NASSER");
@@ -44,165 +20,205 @@ public class Quiz {
         System.out.println("NESTE QUESTIONÁRIO VOCÊ IRÁ RESPONDER 15 PERGUNTAS. É NECESSÁRIO DIGITAR O NÚMERO CORRESPONDENTE À ALTERNATIVA.");
         System.out.println();
 
-        // Lista para armazenar as questaos
-        List<Questao1> questaos = new ArrayList<>();
-        List<Questao1> acertadas = new ArrayList<>();
-        List<Questao1> erradas = new ArrayList<>();
+        // Lista para armazenar todas as questões
+        List<Questao> questaos = new ArrayList<>();
 
-        // Adicionar questaos
-        questaos.add(new Questao1(
-                "Qual é a civilização mais antiga do mundo?",
-                List.of("Grécia", "Roma", "Winterfell", "Mesopotâmia", "Hogwarts"),
-                "Mesopotâmia"
-        ));
+        // Adicionar questões
+        Questao q1 = new Questao();
+        q1.pergunta = "Qual é a civilização mais antiga do mundo?";
+        q1.opcaoA = " a) Roma";
+        q1.opcaoB = " b) Winterfell";
+        q1.opcaoC = " c) Hogwarts";
+        q1.opcaoD = " d) Mesopotâmia";
+        q1.opcaoE = " e) Grécia";
+        q1.correta = "d";
+        questaos.add(q1);
 
-        questaos.add(new Questao1(
-                "Em que ano começou a Primeira Guerra Mundial?",
-                List.of("1914", "1918", "1939", "1945", "1899"),
-                "1914"
-        ));
+        Questao q2 = new Questao();
+        q2.pergunta = "Em que ano começou a Primeira Guerra Mundial?";
+        q2.opcaoA = " a) 1914";
+        q2.opcaoB = " b) 1918";
+        q2.opcaoC = " c) 1939";
+        q2.opcaoD = " d) 1945";
+        q2.opcaoE = " e) 1899";
+        q2.correta = "a";
+        q2.escrevaQuestao();
+        resp = q2.leiaResposta();
+        if (q2.isCorreta(resp)) cont++;
 
-        questaos.add(new Questao1(
-                "Quem é o primeiro presidente dos Estados Unidos?",
-                List.of("Obama", "Biden", "Bush", "Washington", "Trump"),
-                "Washington"
-        ));
-        questaos.add(new Questao1(
-                "A civilização asteca se originou de qual país??",
-                List.of("Brasil", "México", "Peru", "Argentina", "Inglaterra"),
-                "México"
-        ));
+        Questao q3 = new Questao();
+        q3.pergunta = "Quem é o primeiro presidente dos Estados Unidos?";
+        q3.opcaoA = " a) Obama";
+        q3.opcaoB = " b) Biden";
+        q3.opcaoC = " c) Bush";
+        q3.opcaoD = " d) Washington";
+        q3.opcaoE = " e) Trump";
+        q3.correta = "d";
+        q3.escrevaQuestao();
+        resp = q3.leiaResposta();
+        if (q3.isCorreta(resp)) cont++;
 
-        questaos.add(new Questao1(
-                "Quem foi o primeiro homem a pisar na lua?",
-                List.of("Yuri Gagarin", "Nicolau Flamel", "Alfred Worden", "Neil Armstrong", "Anatoli Berezovoy"),
-                "Neil Armstrong"
-        ));
+        Questao q4 = new Questao();
+        q4.pergunta = "A civilização asteca se originou de qual país?";
+        q4.opcaoA = " a) Brasil";
+        q4.opcaoB = " b) México";
+        q4.opcaoC = " c) Peru";
+        q4.opcaoD = " d) Argentina";
+        q4.opcaoE = " e) Inglaterra";
+        q4.correta = "b";
+        q4.escrevaQuestao();
+        resp = q4.leiaResposta();
+        if (q4.isCorreta(resp)) cont++;
 
-        questaos.add(new Questao1(
-                "Durante qual evento, a Coréia foi separada em 2 nações?",
-                List.of("Segunda Guerra Mundial", "Primeira Guerra Mundial", "Guerra dos Bastardos", "Guerras Médicas", "Guerra de Troia"),
-                "Segunda Guerra Mundial"
-        ));
+        Questao q5 = new Questao();
+        q5.pergunta = "Quem foi o primeiro homem a pisar na lua?";
+        q5.opcaoA = " a) Yuri Gagarin";
+        q5.opcaoB = " b) Nicolau Flamel";
+        q5.opcaoC = " c) Alfred Worden";
+        q5.opcaoD = " d) Neil Armstrong";
+        q5.opcaoE = " e) Anatoli Berezovoy";
+        q5.correta = "d";
+        q5.escrevaQuestao();
+        resp = q5.leiaResposta();
+        if (q5.isCorreta(resp)) cont++;
 
-        questaos.add(new Questao1(
-                "Qual é outro nome para a Grande Pirâmide do Egito?",
-                List.of("Anúbis", "Gon", "Rá", "Jiro", "Gizé"),
-                "Gizé"
-        ));
+        Questao q6 = new Questao();
+        q6.pergunta = "Durante qual evento, a Coréia foi separada em 2 nações?";
+        q6.opcaoA = " a) Segunda Guerra Mundial";
+        q6.opcaoB = " b) Primeira Guerra Mundial";
+        q6.opcaoC = " c) Guerra dos Bastardos";
+        q6.opcaoD = " d) Guerras Médicas";
+        q6.opcaoE = " e) Guerra de Troia";
+        q6.correta = "a";
+        q6.escrevaQuestao();
+        resp = q6.leiaResposta();
+        if (q6.isCorreta(resp)) cont++;
 
-        questaos.add(new Questao1(
-                "Quem é o inventor da luz elétrica?",
-                List.of("Albert Einstein", "Thomas Edison", "Nikola Tesla", "Marie Curie", "Charles Darwin"),
-                "Thomas Edison"
-        ));
+        Questao q7 = new Questao();
+        q7.pergunta = "Qual é outro nome para a Grande Pirâmide do Egito?";
+        q7.opcaoA = " a) Anúbis";
+        q7.opcaoB = " b) Gon";
+        q7.opcaoC = " c) Rá";
+        q7.opcaoD = " d) Jiro";
+        q7.opcaoE = " e) Gizé";
+        q7.correta = "e";
+        q7.escrevaQuestao();
+        resp = q7.leiaResposta();
+        if (q7.isCorreta(resp)) cont++;
 
-        questaos.add(new Questao1(
-                "Quando aconteceu a Guerra Fria?",
-                List.of("1947-1991", "1912-1931", "1982-1998", "1960-1980", "1937-1959"),
-                "1947-1991"
-        ));
+        Questao q8 = new Questao();
+        q8.pergunta = "Quem é o inventor da luz elétrica?";
+        q8.opcaoA = " a) Albert Einstein";
+        q8.opcaoB = " b) Thomas Edison";
+        q8.opcaoC = " c) Nikola Tesla";
+        q8.opcaoD = " d) Marie Curie";
+        q8.opcaoE = " e) Charles Darwin";
+        q8.correta = "b";
+        q8.escrevaQuestao();
+        resp = q8.leiaResposta();
+        if (q8.isCorreta(resp)) cont++;
 
-        questaos.add(new Questao1(
-                "Em que oceano o Titanic afundou?",
-                List.of("Oceano Antártico", "Oceano Ártico", "Oceano Índico", "Oceano Pacífico Norte", "Oceano Atlântico"),
-                "Oceano Atlântico"
-        ));
+        Questao q9 = new Questao();
+        q9.pergunta = "Quando aconteceu a Guerra Fria?";
+        q9.opcaoA = " a) 1947-1991";
+        q9.opcaoB = " b) 1912-1931";
+        q9.opcaoC = " c) 1982-1998";
+        q9.opcaoD = " d) 1960-1980";
+        q9.opcaoE = " e) 1937-1959";
+        q9.correta = "a";
+        q9.escrevaQuestao();
+        resp = q9.leiaResposta();
+        if (q9.isCorreta(resp)) cont++;
 
-        questaos.add(new Questao1(
-                "Quem fez o famoso discurso “Eu tenho um sonho”?",
-                List.of("Martin Luther King Jr", "Abdias Nascimento", "Elaine Brown", "Malcom X", "Rosa Parks"),
-                "Martin Luther King Jr"
-        ));
+        Questao q10 = new Questao();
+        q10.pergunta = "Em que oceano o Titanic afundou?";
+        q10.opcaoA = " a) Oceano Antártico";
+        q10.opcaoB = " b) Oceano Ártico";
+        q10.opcaoC = " c) Oceano Índico";
+        q10.opcaoD = " d) Oceano Pacífico Norte";
+        q10.opcaoE = " e) Oceano Atlântico";
+        q10.correta = "e";
+        q10.escrevaQuestao();
+        resp = q10.leiaResposta();
+        if (q10.isCorreta(resp)) cont++;
 
-        questaos.add(new Questao1(
-                "Mona Lisa é uma pintura famosa de qual artista?",
-                List.of("Rafael Sanzio", "Donato di Niccoló", "Leonardo Davinci", "Michelangelo di Lodovico", "Mestre Splinter"),
-                "Leonardo Davinci"
-        ));
+        Questao q11 = new Questao();
+        q11.pergunta = "Quem fez o famoso discurso “Eu tenho um sonho”?";
+        q11.opcaoA = " a) Martin Luther King Jr";
+        q11.opcaoB = " b) Abdias Nascimento";
+        q11.opcaoC = " c) Elaine Brown";
+        q11.opcaoD = " d) Malcom X";
+        q11.opcaoE = " e) Rosa Parks";
+        q11.correta = "a";
+        q11.escrevaQuestao();
+        resp = q11.leiaResposta();
+        if (q11.isCorreta(resp)) cont++;
 
-        questaos.add(new Questao1(
-                "Em qual cidade começou a Primeira Guerra Mundial?",
-                List.of("Paris", "Sarajevo", "Istambul", "Berlim", "Mostar"),
-                "Sarajevo"
-        ));
+        Questao q12 = new Questao();
+        q12.pergunta = "Mona Lisa é uma pintura famosa de qual artista?";
+        q12.opcaoA = " a) Rafael Sanzio";
+        q12.opcaoB = " b) Donato di Niccoló";
+        q12.opcaoC = " c) Leonardo Da Vinci";
+        q12.opcaoD = " d) Michelangelo di Lodovico";
+        q12.opcaoE = " e) Mestre Splinter";
+        q12.correta = "c";
+        q12.escrevaQuestao();
+        resp = q12.leiaResposta();
+        if (q12.isCorreta(resp)) cont++;
 
-        questaos.add(new Questao1(
-                "Qual era o nome da agência de inteligência soviética?",
-                List.of("ICBM", "DMZ", "SSI", "KGB", "DBZ"),
-                "KGB"
-        ));
+        Questao q13 = new Questao();
+        q13.pergunta = "Em qual cidade começou a Primeira Guerra Mundial?";
+        q13.opcaoA = " a) Paris";
+        q13.opcaoB = " b) Sarajevo";
+        q13.opcaoC = " c) Istambul";
+        q13.opcaoD = " d) Berlim";
+        q13.opcaoE = " e) Mostar";
+        q13.correta = "b";
+        q13.escrevaQuestao();
+        resp = q13.leiaResposta();
+        if (q13.isCorreta(resp)) cont++;
 
-        questaos.add(new Questao1(
-                "Quanto tempo durou a guerra dos 100 anos?",
-                List.of("100 anos", "116 anos", "95 anos", "103 anos", "99 anos"),
-                "116 anos"
-        ));
+        Questao q14 = new Questao();
+        q14.pergunta = "Qual era o nome da agência de inteligência soviética?";
+        q14.opcaoA = " a) ICBM";
+        q14.opcaoB = " b) DMZ";
+        q14.opcaoC = " c) SSI";
+        q14.opcaoD = " d) KGB";
+        q14.opcaoE = " e) DBZ";
+        q14.correta = "d";
+        q14.escrevaQuestao();
+        resp = q14.leiaResposta();
+        if (q14.isCorreta(resp)) cont++;
 
+        Questao q15 = new Questao();
+        q15.pergunta = "Quanto tempo durou a guerra dos 100 anos?";
+        q15.opcaoA = " a) 100 anos";
+        q15.opcaoB = " b) 116 anos";
+        q15.opcaoC = " c) 95 anos";
+        q15.opcaoD = " d) 103 anos";
+        q15.opcaoE = " e) 99 anos";
+        q15.correta = "b";
+        q15.escrevaQuestao();
+        resp = q15.leiaResposta();
+        if (q15.isCorreta(resp)) cont++;
 
-        // Contador de acertos
-        int acertos = 0;
+        // Adicionar mais questões conforme a estrutura acima...
+        // Questões q6, q7, ..., q15 seriam adicionadas da mesma forma.
 
-        // Iterar sobre as questaos
-        for (Questao1 questao : questaos) {
-            boolean respostaRegistrada = false;
-            while (!respostaRegistrada) {
-                // Exibir a questao
-                System.out.println(questao.getQuestao());
-
-                // Embaralhar alternativas
-                List<String> alternativas = new ArrayList<>(questao.getAlternativas());
-                Collections.shuffle(alternativas);
-
-                // Exibir alternativas
-                for (int i = 0; i < alternativas.size(); i++) {
-                    System.out.println("[" + i + "] " + alternativas.get(i));
-                }
-
-                // Solicitar resposta do usuário
-                System.out.print("Digite o número da sua resposta: ");
-                String resposta = scanner.nextLine();
-
-                try {
-                    // Verificar a resposta
-                    int respostaInt = Integer.parseInt(resposta);
-                    if (respostaInt < 0 || respostaInt >= alternativas.size()) {
-                        System.out.println("Número inválido. Tente novamente.");
-                    } else {
-                        String valorDaResposta = alternativas.get(respostaInt);
-                        if (valorDaResposta.equals(questao.getRespostaCorreta())) {
-                            System.out.println("Resposta correta!");
-                            acertos++;
-                            acertadas.add(questao);
-                        } else {
-                            System.out.println("Resposta errada! A resposta correta era: " + questao.getRespostaCorreta());
-                            erradas.add(questao);
-                        }
-                        respostaRegistrada = true; // Passar para a próxima questao
-                    }
-                } catch (NumberFormatException e) {
-                    System.out.println("Entrada inválida! Digite um número correspondente à alternativa.");
-                }
+        // Iterando sobre as questões para apresentá-las e processar as respostas
+        for (Questao questao : questaos) {
+            questao.escrevaQuestao();
+            resp = questao.leiaResposta();
+            if (questao.isCorreta(resp)) {
+                cont++;
             }
         }
+        double porcentagem = (cont / 15.0) * 100;
 
-        // Exibir resultados
-        System.out.println("\nRESULTADOS DO QUIZ:");
-        System.out.println("Você acertou " + acertos + " de " + questaos.size() + " questaos.");
-        double porcentagem = (acertos / (double) questaos.size()) * 100;
+        // Contador de acertos
+        System.out.println("Você acertou " + cont + " respostas.");
+        System.out.println("Você errou " + (15 - cont) + " respostas.");
         System.out.println("Porcentagem de acertos: " + String.format("%.2f", porcentagem) + "%");
-
-        // Mostrar questaos acertadas
-        System.out.println("\nPerguntas Acertadas:");
-        for (Questao1 questao : acertadas) {
-            System.out.println("- " + questao.getQuestao() + " (Resposta correta: " + questao.getRespostaCorreta() + ")");
-        }
-
-        // Mostrar questaos erradas
-        System.out.println("\nPerguntas Erradas:");
-        for (Questao1 questao : erradas) {
-            System.out.println("- " + questao.getQuestao() + " (Resposta correta: " + questao.getRespostaCorreta() + ")");
-        }
 
         scanner.close();
     }
