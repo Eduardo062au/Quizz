@@ -26,7 +26,7 @@ public class Quiz {
         // Adicionar questões
 
         Questao q1 = new Questao();
-        q1.nquestao = "Questão 1"
+        q1.nquestao = "Questão 1";
         q1.pergunta = "Qual é a civilização mais antiga do mundo?";
         q1.opcaoA = " a) Roma";
         q1.opcaoB = " b) Winterfell";
@@ -39,7 +39,7 @@ public class Quiz {
         if (q1.isCorreta(resp)) cont++;
 
         Questao q2 = new Questao();
-        q2.nquestao = "Questão 2"
+        q2.nquestao = "Questão 2";
         q2.pergunta = "Em que ano começou a Primeira Guerra Mundial?";
         q2.opcaoA = " a) 1914";
         q2.opcaoB = " b) 1918";
@@ -52,7 +52,7 @@ public class Quiz {
         if (q2.isCorreta(resp)) cont++;
 
         Questao q3 = new Questao();
-        q3.nquestao = "Questão 3"
+        q3.nquestao = "Questão 3";
         q3.pergunta = "Quem é o primeiro presidente dos Estados Unidos?";
         q3.opcaoA = " a) Obama";
         q3.opcaoB = " b) Biden";
@@ -65,7 +65,7 @@ public class Quiz {
         if (q3.isCorreta(resp)) cont++;
 
         Questao q4 = new Questao();
-        q4.nquestao = "Questão 4"
+        q4.nquestao = "Questão 4";
         q4.pergunta = "A civilização asteca se originou de qual país?";
         q4.opcaoA = " a) Brasil";
         q4.opcaoB = " b) México";
@@ -78,7 +78,7 @@ public class Quiz {
         if (q4.isCorreta(resp)) cont++;
 
         Questao q5 = new Questao();
-        q5.nquestao = "Questão 5"
+        q5.nquestao = "Questão 5";
         q5.pergunta = "Quem foi o primeiro homem a pisar na lua?";
         q5.opcaoA = " a) Yuri Gagarin";
         q5.opcaoB = " b) Nicolau Flamel";
@@ -91,7 +91,7 @@ public class Quiz {
         if (q5.isCorreta(resp)) cont++;
 
         Questao q6 = new Questao();
-        q6.nquestao = "Questão 6"
+        q6.nquestao = "Questão 6";
         q6.pergunta = "Durante qual evento, a Coréia foi separada em 2 nações?";
         q6.opcaoA = " a) Segunda Guerra Mundial";
         q6.opcaoB = " b) Primeira Guerra Mundial";
@@ -104,7 +104,7 @@ public class Quiz {
         if (q6.isCorreta(resp)) cont++;
 
         Questao q7 = new Questao();
-        q7.nquestao = "Questão 7"
+        q7.nquestao = "Questão 7";
         q7.pergunta = "Qual é outro nome para a Grande Pirâmide do Egito?";
         q7.opcaoA = " a) Anúbis";
         q7.opcaoB = " b) Gon";
@@ -117,7 +117,7 @@ public class Quiz {
         if (q7.isCorreta(resp)) cont++;
 
         Questao q8 = new Questao();
-        q8.nquestao = "Questão 8"
+        q8.nquestao = "Questão 8";
         q8.pergunta = "Quem é o inventor da luz elétrica?";
         q8.opcaoA = " a) Albert Einstein";
         q8.opcaoB = " b) Thomas Edison";
@@ -130,7 +130,7 @@ public class Quiz {
         if (q8.isCorreta(resp)) cont++;
 
         Questao q9 = new Questao();
-        q9.nquestao = "Questão 9"
+        q9.nquestao = "Questão 9";
         q9.pergunta = "Quando aconteceu a Guerra Fria?";
         q9.opcaoA = " a) 1947-1991";
         q9.opcaoB = " b) 1912-1931";
@@ -143,7 +143,7 @@ public class Quiz {
         if (q9.isCorreta(resp)) cont++;
 
         Questao q10 = new Questao();
-        q10.nquestao = "Questão 10"
+        q10.nquestao = "Questão 10";
         q10.pergunta = "Em que oceano o Titanic afundou?";
         q10.opcaoA = " a) Oceano Antártico";
         q10.opcaoB = " b) Oceano Ártico";
@@ -156,7 +156,7 @@ public class Quiz {
         if (q10.isCorreta(resp)) cont++;
 
         Questao q11 = new Questao();
-        q11.nquestao = "Questão 11"
+        q11.nquestao = "Questão 11";
         q11.pergunta = "Quem fez o famoso discurso “Eu tenho um sonho”?";
         q11.opcaoA = " a) Martin Luther King Jr";
         q11.opcaoB = " b) Abdias Nascimento";
@@ -169,7 +169,7 @@ public class Quiz {
         if (q11.isCorreta(resp)) cont++;
 
         Questao q12 = new Questao();
-        q12.nquestao = "Questão 12"
+        q12.nquestao = "Questão 12";
         q12.pergunta = "Mona Lisa é uma pintura famosa de qual artista?";
         q12.opcaoA = " a) Rafael Sanzio";
         q12.opcaoB = " b) Donato di Niccoló";
@@ -182,7 +182,7 @@ public class Quiz {
         if (q12.isCorreta(resp)) cont++;
 
         Questao q13 = new Questao();
-        q13.nquestao = "Questão 13"
+        q13.nquestao = "Questão 13";
         q13.pergunta = "Em qual cidade começou a Primeira Guerra Mundial?";
         q13.opcaoA = " a) Paris";
         q13.opcaoB = " b) Sarajevo";
@@ -195,7 +195,7 @@ public class Quiz {
         if (q13.isCorreta(resp)) cont++;
 
         Questao q14 = new Questao();
-        q14.nquestao = "Questão 14"
+        q14.nquestao = "Questão 14";
         q14.pergunta = "Qual era o nome da agência de inteligência soviética?";
         q14.opcaoA = " a) ICBM";
         q14.opcaoB = " b) DMZ";
@@ -208,6 +208,7 @@ public class Quiz {
         if (q14.isCorreta(resp)) cont++;
 
         Questao q15 = new Questao();
+        q15.nquestao = "Questão 15";
         q15.pergunta = "Quanto tempo durou a guerra dos 100 anos?";
         q15.opcaoA = " a) 100 anos";
         q15.opcaoB = " b) 116 anos";
