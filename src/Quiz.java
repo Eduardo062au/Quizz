@@ -91,6 +91,7 @@ public class Quiz {
         if (q5.isCorreta(resp)) cont++;
 
         Questao q6 = new Questao();
+        q6.nquestao = "Questão 6"
         q6.pergunta = "Durante qual evento, a Coréia foi separada em 2 nações?";
         q6.opcaoA = " a) Segunda Guerra Mundial";
         q6.opcaoB = " b) Primeira Guerra Mundial";
@@ -103,6 +104,7 @@ public class Quiz {
         if (q6.isCorreta(resp)) cont++;
 
         Questao q7 = new Questao();
+        q7.nquestao = "Questão 7"
         q7.pergunta = "Qual é outro nome para a Grande Pirâmide do Egito?";
         q7.opcaoA = " a) Anúbis";
         q7.opcaoB = " b) Gon";
@@ -115,6 +117,7 @@ public class Quiz {
         if (q7.isCorreta(resp)) cont++;
 
         Questao q8 = new Questao();
+        q8.nquestao = "Questão 8"
         q8.pergunta = "Quem é o inventor da luz elétrica?";
         q8.opcaoA = " a) Albert Einstein";
         q8.opcaoB = " b) Thomas Edison";
@@ -127,6 +130,7 @@ public class Quiz {
         if (q8.isCorreta(resp)) cont++;
 
         Questao q9 = new Questao();
+        q9.nquestao = "Questão 9"
         q9.pergunta = "Quando aconteceu a Guerra Fria?";
         q9.opcaoA = " a) 1947-1991";
         q9.opcaoB = " b) 1912-1931";
@@ -139,6 +143,7 @@ public class Quiz {
         if (q9.isCorreta(resp)) cont++;
 
         Questao q10 = new Questao();
+        q10.nquestao = "Questão 10"
         q10.pergunta = "Em que oceano o Titanic afundou?";
         q10.opcaoA = " a) Oceano Antártico";
         q10.opcaoB = " b) Oceano Ártico";
@@ -151,6 +156,7 @@ public class Quiz {
         if (q10.isCorreta(resp)) cont++;
 
         Questao q11 = new Questao();
+        q11.nquestao = "Questão 11"
         q11.pergunta = "Quem fez o famoso discurso “Eu tenho um sonho”?";
         q11.opcaoA = " a) Martin Luther King Jr";
         q11.opcaoB = " b) Abdias Nascimento";
@@ -163,6 +169,7 @@ public class Quiz {
         if (q11.isCorreta(resp)) cont++;
 
         Questao q12 = new Questao();
+        q12.nquestao = "Questão 12"
         q12.pergunta = "Mona Lisa é uma pintura famosa de qual artista?";
         q12.opcaoA = " a) Rafael Sanzio";
         q12.opcaoB = " b) Donato di Niccoló";
@@ -175,6 +182,7 @@ public class Quiz {
         if (q12.isCorreta(resp)) cont++;
 
         Questao q13 = new Questao();
+        q13.nquestao = "Questão 13"
         q13.pergunta = "Em qual cidade começou a Primeira Guerra Mundial?";
         q13.opcaoA = " a) Paris";
         q13.opcaoB = " b) Sarajevo";
@@ -187,6 +195,7 @@ public class Quiz {
         if (q13.isCorreta(resp)) cont++;
 
         Questao q14 = new Questao();
+        q14.nquestao = "Questão 14"
         q14.pergunta = "Qual era o nome da agência de inteligência soviética?";
         q14.opcaoA = " a) ICBM";
         q14.opcaoB = " b) DMZ";
