@@ -15,8 +15,6 @@ public class Quiz {
         System.out.println();
         System.out.println("PROFESSOR: BRENNO PIMENTA");
         System.out.println();
-        System.out.println("PROFESSOR: BRENNO PIMENTA");
-        System.out.println();
         System.out.println("ALGORITMO E PROGRAMAÇÃO II");
         System.out.println();
         System.out.println("NESTE QUESTIONÁRIO VOCÊ IRÁ RESPONDER 15 PERGUNTAS. É NECESSÁRIO DIGITAR APENAS A LETRA CORRESPONDENTE À ALTERNATIVA.");
@@ -26,6 +24,7 @@ public class Quiz {
         List<Questao> questaos = new ArrayList<>();
 
         // Adicionar questões
+
         Questao q1 = new Questao();
         q1.pergunta = "Qual é a civilização mais antiga do mundo?";
         q1.opcaoA = " a) Roma";
@@ -34,7 +33,9 @@ public class Quiz {
         q1.opcaoD = " d) Mesopotâmia";
         q1.opcaoE = " e) Grécia";
         q1.correta = "d";
-        questaos.add(q1);
+        q1.escrevaQuestao();
+        resp = q1.leiaResposta();
+        if (q1.isCorreta(resp)) cont++;
 
         Questao q2 = new Questao();
         q2.pergunta = "Em que ano começou a Primeira Guerra Mundial?";
