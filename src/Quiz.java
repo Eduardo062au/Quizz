@@ -92,7 +92,7 @@ public class Quiz {
         q6.correta = "a";
         q6.escrevaQuestao();
         resp = q6.leiaResposta();
-        if (q6.isCorreta(resp)) cont++;
+        ;
 
         Questao q7 = new Questao();
         q7.pergunta = "Qual é outro nome para a Grande Pirâmide do Egito?";
@@ -131,7 +131,7 @@ public class Quiz {
         if (q9.isCorreta(resp)) cont++;
 
         Questao q10 = new Questao();
-        q10.pergunta = "Em que oceano o Titanic sofreu o afundamento?";
+        q10.pergunta = "Em que oceano o Titanic afundou?";
         q10.opcaoA = " a) Oceano Antártico";
         q10.opcaoB = " b) Oceano Ártico";
         q10.opcaoC = " c) Oceano Índico";
