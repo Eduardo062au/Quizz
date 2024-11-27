@@ -15,7 +15,9 @@ public class Quiz {
         System.out.println();
         System.out.println("PROFESSOR: BRENNO PIMENTA");
         System.out.println();
-        System.out.println("ATIVIDADE AVALIATIVA DE CONHECIMENTO HISTÓRICO GERAIS");
+        System.out.println("PROFESSOR: BRENNO PIMENTA");
+        System.out.println();
+        System.out.println("ALGORITMO E PROGRAMAÇÃO II");
         System.out.println();
         System.out.println("NESTE QUESTIONÁRIO VOCÊ IRÁ RESPONDER 15 PERGUNTAS. É NECESSÁRIO DIGITAR APENAS A LETRA CORRESPONDENTE À ALTERNATIVA.");
         System.out.println();
