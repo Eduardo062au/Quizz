@@ -11,7 +11,7 @@ public class Quiz {
         // Apresentação do Quiz
         System.out.println("CENTRO UNIVERSITARIO ALFREDO NASSER");
         System.out.println();
-        System.out.println("ALUNO: EDUARDO MARTINS");
+        System.out.println("ALUNO: EDUARDO  INACIO MARTINS");
         System.out.println();
         System.out.println("PROFESSOR: BRENNO PIMENTA");
         System.out.println();
