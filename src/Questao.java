@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 // CLASSE PARA O TRABALHO
 public class Questao {
+    String nquestao = "";
     String pergunta = "";
     String opcaoA = "";
     String opcaoB = "";

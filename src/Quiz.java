@@ -26,6 +26,7 @@ public class Quiz {
         // Adicionar questões
 
         Questao q1 = new Questao();
+        q1.nquestao = "Questão 1"
         q1.pergunta = "Qual é a civilização mais antiga do mundo?";
         q1.opcaoA = " a) Roma";
         q1.opcaoB = " b) Winterfell";
@@ -38,6 +39,7 @@ public class Quiz {
         if (q1.isCorreta(resp)) cont++;
 
         Questao q2 = new Questao();
+        q2.nquestao = "Questão 2"
         q2.pergunta = "Em que ano começou a Primeira Guerra Mundial?";
         q2.opcaoA = " a) 1914";
         q2.opcaoB = " b) 1918";
@@ -50,6 +52,7 @@ public class Quiz {
         if (q2.isCorreta(resp)) cont++;
 
         Questao q3 = new Questao();
+        q3.nquestao = "Questão 3"
         q3.pergunta = "Quem é o primeiro presidente dos Estados Unidos?";
         q3.opcaoA = " a) Obama";
         q3.opcaoB = " b) Biden";
@@ -62,6 +65,7 @@ public class Quiz {
         if (q3.isCorreta(resp)) cont++;
 
         Questao q4 = new Questao();
+        q4.nquestao = "Questão 4"
         q4.pergunta = "A civilização asteca se originou de qual país?";
         q4.opcaoA = " a) Brasil";
         q4.opcaoB = " b) México";
@@ -74,6 +78,7 @@ public class Quiz {
         if (q4.isCorreta(resp)) cont++;
 
         Questao q5 = new Questao();
+        q5.nquestao = "Questão 5"
         q5.pergunta = "Quem foi o primeiro homem a pisar na lua?";
         q5.opcaoA = " a) Yuri Gagarin";
         q5.opcaoB = " b) Nicolau Flamel";
