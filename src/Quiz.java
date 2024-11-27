@@ -17,7 +17,7 @@ public class Quiz {
         System.out.println();
         System.out.println("ATIVIDADE AVALIATIVA DE CONHECIMENTO HISTÓRICO GERAIS");
         System.out.println();
-        System.out.println("NESTE QUESTIONÁRIO VOCÊ IRÁ RESPONDER 15 PERGUNTAS. É NECESSÁRIO DIGITAR O NÚMERO CORRESPONDENTE À ALTERNATIVA.");
+        System.out.println("NESTE QUESTIONÁRIO VOCÊ IRÁ RESPONDER 15 PERGUNTAS. É NECESSÁRIO DIGITAR APENAS A LETRA CORRESPONDENTE À ALTERNATIVA.");
         System.out.println();
 
         // Lista para armazenar todas as questões
@@ -92,7 +92,7 @@ public class Quiz {
         q6.correta = "a";
         q6.escrevaQuestao();
         resp = q6.leiaResposta();
-        ;
+        if (q6.isCorreta(resp)) cont++;
 
         Questao q7 = new Questao();
         q7.pergunta = "Qual é outro nome para a Grande Pirâmide do Egito?";
